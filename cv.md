@@ -27,6 +27,21 @@
 
 ---
 
+### **Code example**
+Write a function which returns a new string containing the same character sequences except the first and the last ones separated by spaces.
+
+```javascript
+function array(arr){
+  if(arr == "" || arr.split(",").slice(1, -1).join(" ") == "" || arr.slice(1) == "" ) {
+    return null;
+  } else {
+    return arr.split(",").slice(1, -1).join(" ");
+  } 
+}
+```
+
+---
+
 ### **Work experience:**
 *Nothing yet…*
 
