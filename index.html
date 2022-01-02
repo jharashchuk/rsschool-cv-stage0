@@ -4,10 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>                    
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">       
+        <section class="profile" id="profile">
+            <div class="container">
+                <div class="section-profile">  
+                    <div class="wrapper">
+                        <div class="section-profile-banner">
+                            <h1 class="section-profile-title">Julia Harashchuk</h1>
+                            <h3 class="section-profile-subtitle">Junior Front-End Developer</h3>
+                        </div>
+                        <div class="section-profile-summary">
+                            <p>
+                                The more I learn about front-end technologies, the more I see that you need to pay attention to every little detail, and code is a well-thought strategy where every little part matters.  I want to create wonderful things with people who are also fanatical about writing codes.
+                            </p>
+                        </div>
+                    </div>                    
+                    <div class="section-profile-photo">
+                        <img src="./assets/img/my-photo.jpg" alt="profile-photo">
+                    </div>
+                </div>
+            </div>                
+        </section>
+        <div class="container main-container">
+            <section class="section" id="contacts">                
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="section-item">Location: Warsaw, Poland</li>
+                    <li class="section-item">Email: <a href="mailto:j.garaschuk@gmail.com" title="email">j.garaschuk@gmail.com</a></li>
+                    <li class="section-item">GitHub: <a href="https://github.com/jharashchuk" title="github">jharashchuk</a></li>
+                    <li class="section-item">Skype: <a href="Skype:live:.cid.c2bf5bee763e6eef?chat">Juliya Harashchuk</a></li>                    
+                </ul>
+            </section>            
+            <section class="section skills" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                    <li class="section-item">HTML, CSS</li>
+                    <li class="section-item">JavaScript basic</li>
+                    <li class="section-item">Git, GitHub</li>
+                    <li class="section-item">Avocode, Figma</li>
+                    <li class="section-item">VS Code</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="pre">
+                    <code>
+function array(arr){
+    if(arr == "" || arr.split(",").slice(1, -1).join(" ") == "" || arr.slice(1) == "") {
+    return null;
+    } else {
+    return arr.split(",").slice(1, -1).join(" ");
+    } 
+}
+                    </code>
+                </pre>
+            </section>          
+            <section class="section education" id="education">
+                <h2 class="section-title">Education and courses</h2>
+                <ul class="section-list">
+                    <li class="section-item">Belarusian State Medical University</li>
+                    <li class="section-item"><a href="https://www.it-academy.by/">IT-Academy (HTML/CSS)</a></li>
+                    <li class="section-item"><a href="https://www.udemy.com/course/webdeveloper/">Udemy - HTML/CSS</a></li>
+                    <li class="section-item"><a href="https://www.udemy.com/course/javascript_full/">Udemy - JavaScript (in progress)</a></li>
+                    <li class="section-item">JavaScript Manual https://learn.javascript.ru (in progress)</li>
+                </ul>
+            </section>
+            <section class="section projects" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul class="section-list">
+                    <li class="section-item"><a href="https://jharashchuk.github.io/ACTIVEBOX/">ACTIVEBOX</a></li>
+                    <li class="section-item"><a href="https://jharashchuk.github.io/AXIT/">AXIT</a></li>
+                </ul>
+            </section>
+            <section class="section" id="english">
+                <h2 class="section-title">English</h2>
+                <p>B1 - Intermediate</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="copyright">
+                    <span>© 2022</span>                   
+                    <a href="https://github.com/jharashchuk" class="nav-link footer-link">jharashchuk</a>
+                </div>                
+                <a href="https://rs.school/js/" class="footer-logo"></a>                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

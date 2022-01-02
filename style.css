@@ -2,4 +2,177 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1e3d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-size: 20px;
+    font-weight: 300;
+    color: #62464d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #99727d;
+    padding: 40px 0;   
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;    
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;        
+}
+
+.nav-link::after {
+    content: '';    
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+}
+
+.main-container .section {
+    margin-bottom: 30px;   
+    padding: 0 20px;
+}
+
+.section {    
+    flex: 0 1 50%;
+}
+
+.profile {
+    background-color: #e3cebe; 
+}
+
+.section-profile {    
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;  
+}
+
+.wrapper {
+    flex: 0 1 50%;
+    padding: 0 30px 0 0;
+} 
+
+.section-profile-photo {
+    flex: 0 0 300px;
+}
+
+.section-profile-title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 47px;
+    color: #62464d;
+    text-transform: uppercase;
+}
+
+.section-profile-subtitle {
+    color: #62464d;
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.section-profile-photo img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;    
+}
+
+.section-title {
+    margin-bottom: 30px;
+    color: #62464d;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-list {
+    list-style: none;
+}
+
+.section-item {
+    margin-bottom: 10px;
+}
+
+.section-item a {
+    text-decoration: none;
+    color: #99727d;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {      
+    color: #8c0004;
+}
+
+.skills .section-list,
+.education .section-list {
+    list-style: circle;
+}
+
+.pre {
+    white-space: pre-wrap;
+}
+
+.footer {
+    background-color: #99727d;
+    color: #fff;    
+    padding: 20px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 50px;   
+    background-image: url(./assets/img/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
